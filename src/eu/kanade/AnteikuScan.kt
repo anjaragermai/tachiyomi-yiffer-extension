@@ -1,4 +1,4 @@
-package eu.kanade.tachiyomi.extension.en.yiffer
+package eu.kanade.tachiyomi.extension.fr.anteikuscan
 
 import android.net.Uri
 import eu.kanade.tachiyomi.network.GET
@@ -19,18 +19,18 @@ import java.util.Calendar
 
 class Yiffer : HttpSource() {
 
-    override val name = "Yiffer"
+    override val name = "AnteikuScan"
 
-    override val baseUrl = "https://yiffer.xyz"
+    override val baseUrl = "https://anteikuscan.fr"
 
-    override val lang = "en"
+    override val lang = "fr"
 
     override val supportsLatest = true
 
     override val client: OkHttpClient = network.cloudflareClient
 
     private val json: Json by injectLazy()
-    private val baseStaticUrl = "https://static.yiffer.xyz"
+    private val baseStaticUrl = "https://static.anteikuscan.fr"
 
     private fun buildSearchRequest(
         searchText: String = "",
