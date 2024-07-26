@@ -1,4 +1,4 @@
-package eu.kanade.tachiyomi.extension.en.yiffer
+package eu.kanade.tachiyomi.extension.fr.anteikuscan
 
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
